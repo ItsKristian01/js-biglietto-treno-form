@@ -24,7 +24,8 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
 
 ---
 ### Logica del programma
-- Implementare il programma con due input e un bottone nel HTML
+- Inserire due input uno per i km da percorrere e uno con l'eta' del utente
+-Inserire un bottone
 - Calcolare il prezzo del biglietto in base ai km (0.21 € * {km inseriti dal utente})
 - Applicare il 20% disconto sul prezzo del biglietto se l'utente ha eta' < di 18 anni
 - Applicare il 40% disconto sul prezzo del biglietto se l'utente ha eta' > di 65 anni
