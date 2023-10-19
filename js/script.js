@@ -40,7 +40,13 @@ dataSend.addEventListener("click", function () {
         document.getElementById("message").innerHTML = `Ciao! Il prezzo del tuo biglietto e ${overTicket}`;
     }
 });
-// Output
+
+document.getElementById("delete").addEventListener("click", function () {
+    userKm.valueAsNumber = "";
+    userAge.valueAsNumber = "";
+    document.getElementById("message").innerHTML = "";
+})
+
 
 
 
