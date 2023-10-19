@@ -1,23 +1,47 @@
 //Variable Declaration
 const userKm = document.getElementById("userkm");
-console.log (userKm);
+console.log(userKm);
 
 const userAge = document.getElementById("userage");
-console.log (userAge);
-
-const ticketPrice = document.getElementById("final-price");
-console.log (ticketPrice);
+console.log(userAge);
 
 
 // Getting Data from user input
+
+
 const dataSend = document.getElementById("enter");
-dataSend.addEventListener("click", function(){
+dataSend.addEventListener("click", function () {
     console.log("Hai inviato i dati");
-    const userKmData = userKm.value;
-    const userAgeData = userAge.value;
-    console.log (userKmData, userAgeData);
+    let userKmData = userKm.valueAsNumber;
+    let userAgeData = userAge.valueAsNumber;
+    console.log(userKmData, userAgeData);
+
+    let travelTicket = 0.21 * userKmData;
+    console.log(travelTicket, typeof travelTicket);
+
+    if (userAgeData < 18) {
+        console.log("E' Minorenne ha diritto ad uno sconto del 20%");
+    } else if (userAgeData > 65) {
+        console.log("Ha un eta' over 65 ha diritto ad uno sconto del 40%");
+    }
+
+    if (userAgeData < 18) {
+        let minorDisc = travelTicket * 0.20;
+        let minorTicket = travelTicket - minorDisc;
+        travelTicket = travelTicket.toFixed(2);
+        console.log(minorTicket, typeof minorTicket);
+    } else if (userAgeData > 65) {
+        let overDisc = travelTicket * 0.40;
+        let overTicket = travelTicket - overDisc;
+        travelTicket = travelTicket.toFixed(2);
+        console.log(overTicket, typeof overTicket);
+    }
 });
 
 // Program Logic
 
+
+
 // Output
+
+
