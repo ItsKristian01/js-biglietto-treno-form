@@ -27,17 +27,17 @@ dataSend.addEventListener("click", function () {
     if (userAgeData < 18) {
         let minorDisc = travelTicket * 0.20;
         let minorTicket = travelTicket - minorDisc;
-        travelTicket = travelTicket.toFixed(2);
+        minorTicket = minorTicket.toFixed(2);
         console.log(minorTicket, typeof minorTicket);
         // Output
-        document.getElementById("message").innerHTML = `Ciao! Il prezzo del tuo biglietto e ${minorTicket}`;
+        document.getElementById("message").innerHTML = `Ciao! Il prezzo del tuo biglietto è € ${minorTicket}`;
     } else if (userAgeData > 65) {
         let overDisc = travelTicket * 0.40;
         let overTicket = travelTicket - overDisc;
-        travelTicket = travelTicket.toFixed(2);
+        overTicket = overTicket.toFixed(2);
         console.log(overTicket, typeof overTicket);
         // Output
-        document.getElementById("message").innerHTML = `Ciao! Il prezzo del tuo biglietto e ${overTicket}`;
+        document.getElementById("message").innerHTML = `Ciao! Il prezzo del tuo biglietto è € ${overTicket}`;
     }
 });
 

@@ -1,0 +1,10 @@
+.mt {
+    margin-right: px;
+}
+
+.message-text {
+    background-color: blueviolet;
+    border-radius: 2rem;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
